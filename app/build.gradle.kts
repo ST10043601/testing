@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    id 'org.jetbrains.kotlin.android' version '1.9.x'  // Specify explicit version
+    kotlin("android") version "1.9.x"
 }
 
 android {
