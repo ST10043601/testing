@@ -46,8 +46,8 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
-      - name: Clear Gradle cache
-        run: ./gradlew clean --no-daemon
+      - name: Clear Gradle cache before build
+        run: ./gradlew cleanBuildCache
 
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
